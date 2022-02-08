@@ -129,7 +129,7 @@ span{
 
 /*active states code*/
 
-a:hover,h2:hover{
+a:hover,h1:hover{
     color: hsl(178, 100%, 50%);
     cursor: pointer;
 }
