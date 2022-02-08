@@ -1,0 +1,161 @@
+@import url('https://fonts.google.com/specimen/Outfit');
+
+*,
+*::after,
+*::before{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    font-family:'Outfit', sans-serif;
+    font-size: 15px;
+    background-color:hsl(217, 54%, 11%);
+    margin: 50px 0px;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+.nft-component{
+    width: 300px;
+    height: auto;
+    background-color: hsl(216, 50%, 16%);
+    border-radius: 15px;
+}
+
+.card{
+    margin: 25px;
+}
+
+.nft-image{
+    position: relative;
+    background-image:  url(./images/image-equilibrium.jpg) ;
+    width: 100%;
+    height: 265px;
+    background-size: 100% 100%;
+    border-radius: 10px;
+}
+
+.icon-view{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background: hsl(178, 100%, 50%, 50%);
+    opacity: 0;
+    transition: opacity 400ms ease;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.nft-name{
+    color: hsl(0, 0%, 100%);
+    margin-top: 20px;
+    font-size: 18px;
+
+}
+
+.nft-desc{
+    font-size: 18px;
+    margin-top: 15px;
+    font-size: 15px;
+    color:  hsl(215, 51%, 70%);
+    line-height: 25px;
+}
+
+.nft-details{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 15px;
+    border-bottom: 1px solid hsl(215, 32%, 27%);
+    padding-bottom: 18px;
+}
+
+.nft-details .contain-1{
+    color: hsl(178, 100%, 50%);
+}
+
+.nft-details span{
+    margin-left: 2px;
+}
+
+.nft-details .contain-2{
+    color:  hsl(215, 51%, 70%);
+}
+
+.nft-details img{
+    margin-bottom: -2px;
+}
+
+.nft-owner{
+    margin-top: 20px;
+}
+
+.nft-owner img{
+    width: 30px;
+    border: 1px solid hsl(0, 0%, 100%);
+    border-radius: 50%;
+    margin-bottom: -7px;
+}
+
+.nft-owner span{
+    color:  hsl(215, 51%, 70%);
+    margin-left: 10px;
+}
+
+a{
+    text-decoration: none;
+    color: hsl(0, 0%, 100%);
+    font-size: 15px;
+
+}
+
+span{
+    font-size: 15px;
+}
+
+.attribution{
+    color: hsl(215, 51%, 70%);
+    margin-top: 29px;
+    font-size: 15px;
+}
+
+/*active states code*/
+
+a:hover,h2:hover{
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
+}
+
+.attribution a:hover{
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
+    text-decoration-line: underline;
+}
+
+
+.nft-image:hover .icon-view {
+    opacity: 1;    
+}
+
+/* responsive code */
+
+@media screen  and (max-width:720px) {
+    .attribution{
+      margin-top: 50px;
+    }
+}
+
+@media screen  and (max-width:320px) {
+    .attribution{
+      font-size:10px ;
+
+    }  
+}
